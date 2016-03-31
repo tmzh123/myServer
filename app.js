@@ -29,13 +29,14 @@ app.get("/",function(req,res){
 var indexController = require('./controllers/index');
 app.get("/joe",indexController.test);
 app.post("/submitForm",indexController.submitForm);
+app.get("/test",indexController.test);
 
 var loginController = require('./controllers/login');
 app.get("/login/index",loginController.index);
 app.get("/login/signin",loginController.signin);
 app.post("/login/signin",loginController.signin);
 
-var port = 8000;
+var port = 8020;
 var server = http.createServer(app);
 server.listen(port);
 console.log("server listen to port:%s",port);

@@ -8,7 +8,7 @@ controller.index = function(req,res) {
 
 
 controller.test = function(req,res) {
-	res.render("test");
+	res.send("test 123456789");
 };
 
 controller.submitForm = function(req,res) {
