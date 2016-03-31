@@ -30,6 +30,8 @@ var indexController = require('./controllers/index');
 app.get("/joe",indexController.test);
 app.post("/submitForm",indexController.submitForm);
 app.get("/test",indexController.test);
+app.get("/test",indexController.test);
+app.get("/test",indexController.test);
 
 var loginController = require('./controllers/login');
 app.get("/login/index",loginController.index);
